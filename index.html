@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3css.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Mobil First Project</title>
+
+
+
+</head>
+<body>
+    
+    <header class="w3-top w3-white">
+        <nav id="desktopNav" class="w3-bar">
+        <a href="#" onclick="toogleNavbar ()" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+
+        </nav>
+
+
+        <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+            <a href="#about" onclick="toogleNavbar ()" class="w3-bar-item w3-button">About</a>
+            <a href="#portfolio" onclick="toogleNavbar ()" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="#contact" onclick="toogleNavbar ()" class="w3-bar-item w3-button">Contact</a>
+        
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section id="home"></section>
+        <section id="#about">
+            <h2>About</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum atque fugiat sequi dolor laudantium numquam nam impedit, distinctio, ducimus voluptas! Aspernatur incidunt nisi voluptas ab nemo, ullam tenetur quis!</p>
+        </section>
+
+        <section id="#portfolio">
+            <h2>Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem distinctio sed praesentium, veritatis mollitia, harum earum voluptates modi dicta natus dignissimos aspernatur facere reiciendis repudiandae quidem. Temporibus, ipsam vitae!</p>
+        </section>
+
+        <section id="#contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, totam molestiae voluptatem eveniet deserunt amet veniam, cum ex odit id laudantium ipsum voluptatum deleniti voluptatibus quisquam beatae enim reprehenderit repellat.</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+
+
+
+
+    </footer>
+
+</body>
+
+<script>
+
+    function toogleNavbar ()
+    {
+        var nav = document.getElementById("mobileNav");
+        nav.classList.toggle("w3-show");
+        // console.log(nav.classList);
+
+    }
+
+
+
+</script>
+
+</html>
