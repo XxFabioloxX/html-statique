@@ -12,13 +12,13 @@
 
 </head>
 <body>
-    
+    <!-- HEADER START -->
     <header class="w3-top w3-white">
-        <nav id="desktopNav" class="w3-bar">
+        <nav id="desktopNav" class="w3-bar w3-border">
         <a href="#" onclick="toogleNavbar ()" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#home" onclick="homeHideNavbar ()" class="w3-bar-item w3-button">Home</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
@@ -35,21 +35,61 @@
 
 
     </header>
-
-    <main>
+    <!-- HEADER END -->
+    <!-- START MAIN -->
+    <main class="w3-container">
 
         <section id="home"></section>
-        <section id="#about">
-            <h2>About</h2>
+
+        <section id="about">
+                <h2>About</h2>
+            <div class="w3-row w3-container">
+            <div class="w3-third  w3-red w3-padding">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum atque fugiat sequi dolor laudantium numquam nam impedit, distinctio, ducimus voluptas! Aspernatur incidunt nisi voluptas ab nemo, ullam tenetur quis!</p>
+            </div>
+            <div class="w3-third  ">
+                <img src="image/images.jpg"  class="w3-image"  >
+            </div>
+            <div class="w3-third  w3-green w3-padding">
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum atque fugiat sequi dolor laudantium numquam nam impedit, distinctio, ducimus voluptas! Aspernatur incidunt nisi voluptas ab nemo, ullam tenetur quis!</p>
+            </div> 
+            </div>
+            </section>   
         </section>
 
-        <section id="#portfolio">
+        <section id="portfolio">
             <h2>Portfolio</h2>
+
+            <div class="w3-row w3-center">
+                <article class="w3-col m4">
+                    <div class="w3-card">
+                        <img src="image/avenue-815297_640.jpg" class="w3-image w3-hover-sepia">
+                    </div>
+                </article>
+                
+                <article class="w3-col m4">
+                    <div class="w3-card">
+                        <img src="image/mountain-landscape-2031539_640.jpg" class="w3-image w3-hover-sepia">
+                    </div>
+                </article>
+                <article class="w3-col m4">
+                    <div class="w3-card">
+                        <img src="image/tree-736885_1280.jpg" class="w3-image w3-hover-sepia">
+                    </div>
+                </article>
+            </div>
+
+
+
+
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem distinctio sed praesentium, veritatis mollitia, harum earum voluptates modi dicta natus dignissimos aspernatur facere reiciendis repudiandae quidem. Temporibus, ipsam vitae!</p>
+
+
+
         </section>
 
-        <section id="#contact">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, totam molestiae voluptatem eveniet deserunt amet veniam, cum ex odit id laudantium ipsum voluptatum deleniti voluptatibus quisquam beatae enim reprehenderit repellat.</p>
         </section>
@@ -69,7 +109,8 @@
 
 
     </main>
-
+    <!-- END MAIN -->
+    <!-- START FOOTER -->
     <footer>
 
 
@@ -77,7 +118,7 @@
 
 
     </footer>
-
+<!-- END FOOTER -->
 </body>
 
 <script>
@@ -90,6 +131,13 @@
 
     }
 
+    function homeHideNavbar ()
+    {
+        var nav = document.getElementById("mobileNav");
+        if (nav.classList.contains("w3-show")){
+            nav.classList.remove("w3-show");
+        }
+    }
 
 
 </script>
