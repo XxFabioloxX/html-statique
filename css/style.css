@@ -92,7 +92,7 @@ footer img {
 /*  */
 #bloc-fixe { 
     position: fixed;
-    right: 25px;
+    right: -35px;
     bottom: 25px;
 }
 #bloc-fixe a { 
