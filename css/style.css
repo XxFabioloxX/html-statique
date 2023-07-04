@@ -1,21 +1,33 @@
+@font-face {
+    font-family: 'WoldDiscovery';
+    src: url("../fonts/WorldDiscovery_PERSONAL_USE_ONLY.otf");
+}
+
 /* 
 font-family: 'Dancing Script', cursive;
 font-family: 'Metal Mania', cursive;
-
-
 */
-header {background: url(../image/fond.webp)repeat-x;
-#desktopNav a{background: url(../image/istockphoto-1066867962-612x612.jpg) center;}
-font-family: 'Metal Mania'; color: red; font-size: 20px;}
+
+
+header {background: url(../image/fond.webp)repeat-x;}
+
+header a{
+    background: url(../image/istockphoto-1066867962-612x612.jpg) center;
+    font-family: 'Metal Mania';
+    font-size: 30px;
+}
+
 html {scroll-behavior: smooth;}
-main {margin-top: 40px;
+
+main {
+    margin-top: 60px;
     background: url(../image/fond.webp)no-repeat;
     background-size: cover;
 }
 
 .fa{
     color: red;
-    zoom: 250%;
+    zoom: 130%;
 }
 
 section {
@@ -26,49 +38,69 @@ section {
 section h2 {
     text-align: center;
     font-family: 'Metal Mania', cursive;
-    text-shadow: rgb(122, 118, 118) 4px 4px 0px;
+    text-shadow: rgb(122, 118, 118) 4px 4px;
     font-size: 52px;
     color: red;
 }
 
-#home{
-
-    background: url(../image/logo-cd.jpg)no-repeat;
+ #home{
+text-align: center;
+    /* background: url(../image/logo-cd.jpg)no-repeat;
     background-position: center;
-    height: 710px;
-   
-}
+    height: 710px;  */
+} 
 
 
-.w3-image {
-    
+.w3-image {  
    margin-bottom: 30px;
-
-
 }
 
  #portfolio img {
     height: 300px;
-
-    /* width: 100%; */
 } 
 #portfolio {
     background: url(../image/generated-7577945_1280.webp)no-repeat ;
     background-size: cover;
-    height: 600px;
-    
+    height: 600px;  
 }
 section p{
-    color: #fff;
+    color: #ff0000;
     padding: 0px 30px 0px 30px;
     font-size: 32px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    text-shadow: rgb(221, 8, 8) 4px 4px 0px;
+    text-shadow: rgb(255, 255, 255) 2px 2px;
 }
 
 #contact {
     background: url(../image/fireworks-1924628_1280.webp);
-    background-position: center;
+    /* background-position: center;   */
+}
+
+
+footer {
+    font-family: 'WoldDiscovery';
+    font-size: 22px;
     
+}
+
+footer img {
+    zoom:180%;
+    margin:0px 15px 0px 15px;
+}
+
+
+
+
+/*  */
+/*  */
+
+#desktopNav{
+    color: red;
+    
+}
+
+#mobileNav{
+    color: red;
+
 }
