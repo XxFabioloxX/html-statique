@@ -89,7 +89,18 @@ footer img {
     margin:0px 15px 0px 15px;
 }
 
-
+/*  */
+#bloc-fixe { 
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+#bloc-fixe a { 
+color: #ff0000;
+padding: 20px;
+font-size: 25px;
+font-family: 'Metal Mania', cursive;
+}
 
 
 /*  */
@@ -97,7 +108,7 @@ footer img {
 
 #desktopNav{
     color: red;
-    
+
 }
 
 #mobileNav{
